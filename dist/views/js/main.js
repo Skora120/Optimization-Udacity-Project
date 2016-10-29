@@ -541,8 +541,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var rows = Math.floor(window.innerHeight / s) + 1;
   
   var movingPizzas = document.getElementById("movingPizzas1");
-
-  for (var i = 0; i < 200; i++) {
+  //calcuate lines
+  var lines = rows*cols;
+  for (var i = 0; i < lines; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
